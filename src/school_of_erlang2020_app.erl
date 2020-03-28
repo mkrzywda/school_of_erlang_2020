@@ -1,16 +1,16 @@
 %%%-------------------------------------------------------------------
-%% @doc school_of_erlang2020 public API
+%% @doc school_of_erlang public API
 %% @end
 %%%-------------------------------------------------------------------
 
--module(school_of_erlang2020_app).
+-module(school_of_erlang_app).
 
 -behaviour(application).
 
 -export([start/2, stop/1]).
 
 start(_StartType, _StartArgs) ->
-    school_of_erlang2020_sup:start_link().
+    school_of_erlang_sup:start_link().
 
 stop(_State) ->
     ok.
